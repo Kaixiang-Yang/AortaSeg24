@@ -17,7 +17,7 @@ download nnU-NetV1
 cd nnUNet
 pip install -e .
 ```
-The weight should be put in `.../Aorta_UNet_Baseline/resources/fold_0`, the dir tree is like:
+The weight can be downloaded at [checkpoint](https://drive.google.com/file/d/1gG1KfvLpfBy82b2e5EO4m2PDtCPJ7KGd/view?usp=drive_link), and should be put in `.../Aorta_UNet_Baseline/resources/fold_0`, the dir tree is like:
 
     Aorta_UNet_Baseline
     ├── resources
