@@ -4,10 +4,10 @@ Our methods are built upon [nnU-Net V1](https://github.com/MIC-DKFZ/nnUNet/tree/
 ## Team Details
 ### Groop Leader
     Zhiwei Wang; zwwang@hust.edu.cn
-    Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology; 
+    Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology
 ### Team Members
     Kaixiang Yang; kxyang@hust.edu.cn
-    Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology; 
+    Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology
 
 ## Environments and Weights
 We provide docker version here, if you want to run in server, please set as follow. For more details like path setting, please refer to [nnU-Netv1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1).
@@ -17,7 +17,7 @@ download nnU-NetV1
 cd nnUNet
 pip install -e .
 ```
-The weight should be put in .../Aorta_UNet_Baseline/resources/fold_0, the dir tree is like:
+The weight should be put in `.../Aorta_UNet_Baseline/resources/fold_0`, the dir tree is like:
 
     Aorta_UNet_Baseline
     ├── resources
@@ -26,6 +26,8 @@ The weight should be put in .../Aorta_UNet_Baseline/resources/fold_0, the dir tr
     │       └── model_final_checkpoint.model.pkl
     ...
 
+The orientation of images may differ from training files, if the results is not normal, please change [infer orientation](nnunet/network_architecture/neural_network.py/#L565).
+
 ### 1. docker
 ```bash
 sh .../Aorta_UNet_Baseline/build.sh
@@ -33,7 +35,7 @@ sh .../Aorta_UNet_Baseline/save.sh
 ```
 
 ### 2. server
-Change the `input` and `output` path in [inference.py](inference.py/#L22)
+Change the `input` and `output` path in [inference.py](inference.py/#L22).
 ```bash
 cd .../Aorta_UNet_Baseline
 python inference.py
