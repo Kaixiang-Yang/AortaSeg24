@@ -26,7 +26,7 @@ The weight can be downloaded at [checkpoint](https://drive.google.com/drive/fold
     │       └── model_final_checkpoint.model.pkl
     ...
 
-The orientation of images may differ from training files, if the results is not normal, please change [infer orientation](nnunet/network_architecture/neural_network.py/#L565).
+The orientation of images may differ from training files, if the results is not normal, please change [infer orientation](Aorta_UNet_Baseline/nnunet/network_architecture/neural_network.py/#L565).
 
 ### 1. docker
 ```bash
@@ -35,7 +35,7 @@ sh .../Aorta_UNet_Baseline/save.sh
 ```
 
 ### 2. server
-Change the `input` and `output` path in [inference.py](inference.py/#L22).
+Change the `input` and `output` path in [inference.py](Aorta_UNet_Baseline/inference.py/#L22).
 ```bash
 cd .../Aorta_UNet_Baseline
 python inference.py
